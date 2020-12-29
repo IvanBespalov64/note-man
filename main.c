@@ -10,7 +10,7 @@ const char* ICON_NAME = "icon.png";
 
 int main (int argc, char *argv[])
 {
-    GtkWidget *window;
+	GtkWidget *window;
 	GtkWidget *text_view;
 	GtkWidget *scrolled_window;
 	GtkWidget *vbox;
@@ -23,8 +23,8 @@ int main (int argc, char *argv[])
 	gtk_init (&argc, &argv);
 
 	/*Init window*/
-    window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title (GTK_WINDOW (window), "Note Man");
+	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    	gtk_window_set_title (GTK_WINDOW (window), "Note Man");
 	gtk_widget_set_size_request(GTK_WINDOW (window), 300, 400);
 	g_signal_connect(window, "destroy", G_CALLBACK (gtk_main_quit), NULL);
 
@@ -62,6 +62,6 @@ int main (int argc, char *argv[])
 
 	gtk_widget_show_all(window);
 
-    gtk_main ();
-    return 0;
+    	gtk_main ();
+    	return 0;
 }
